@@ -1,4 +1,4 @@
 #!/bin/sh
-echo "PubkeyAcceptedKeyTypes +ssh-rsa"
+sudo echo "PubkeyAcceptedKeyTypes +ssh-rsa" >> /etc/ssh/sshd_config
 sudo systemctl restart sshd
 apt update && apt upgrade
