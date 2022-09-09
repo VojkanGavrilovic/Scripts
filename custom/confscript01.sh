@@ -57,6 +57,7 @@ sudo groupadd -g 10000 yugagroup
 sudo gpasswd -M vojkan,milanp,miroslavv yugagroup
 sudo mkdir -m 774 /yugasql
 sudo mkdir -m 774 /yugasql/install
+sudo mkdir -m 774 /yugasql/data
 sudo wget https://downloads.yugabyte.com/releases/2.15.1.0/yugabyte-2.15.1.0-b175-linux-x86_64.tar.gz -P /yugasql/downloads
 sudo tar xvfz /yugasql/downloads/yugabyte-2.15.1.0-b175-linux-x86_64.tar.gz -C /yugasql/install
 
